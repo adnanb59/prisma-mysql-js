@@ -40,11 +40,6 @@ const main = async () => {
         //createUser();
         //displayUsers();
         //updateUser();
-        let post = await prisma.post.update({
-            where: {id: 2},
-            data: {published: true}
-        });
-        console.log(post);
     } catch (e) {
         throw e;
     } finally {
